@@ -8,7 +8,6 @@
 }
 
 body {
-  width: 414px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -188,4 +187,51 @@ h2 {
   font-weight: 400;
 }
 
+.partners {
+  background-color: #414246;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.partners-container {
+  margin: 2rem 1rem;
+}
+
+.partners-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partners-title h2 {
+  color: #f2f2f2;
+}
+
+.partner-logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 2rem 0;
+}
+
+.partner {
+  width: 110px;
+  margin: 0.7rem;
+  opacity: 0.9;
+}
+
+.footer-container {
+  margin: 2.3rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.org-info {
+  margin-left: 8%;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+}
