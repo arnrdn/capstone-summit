@@ -6,10 +6,6 @@
   padding: 0;
 }
 
-body {
-  width: 414px;
-}
-
 header,
 main,
 .main-program-container {
@@ -51,12 +47,7 @@ h1 {
   font-weight: 900;
   font-size: 2rem;
   text-transform: uppercase;
-  /* background-image: url("./images/background-mobile.jpg");
-  background-size: cover; */
-  /* background-clip: text;
-  -webkit-background-clip: text; */
   color: #FF422C;
-  /* mix-blend-mode: multiply; */
 }
 
 .about-summit {
@@ -64,6 +55,7 @@ h1 {
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 1.4rem;
+  color: #505050;
   background-color: #F7F7F7;
   border: 2px solid #fff;
   padding: 1rem;
@@ -73,8 +65,9 @@ h1 {
   padding: 1.5rem 0 6rem 0;
 }
 
-h2 {
+.summit-address span {
   font-family: 'COCOGOOSE', sans-serif;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #555555;
 }
@@ -83,7 +76,7 @@ h2 {
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
-  color: #474747;
+  color: #505050;
 }
 
 .main-program {
@@ -98,9 +91,12 @@ h2 {
   padding: 3rem 1.3rem;
 }
 
-.main-program-title {
+h2 {
   font-family: 'Lato', sans-serif;
   font-size: 1.4rem;
+}
+
+.main-program-title {
   color: #FEFFFD;
   display: flex;
   flex-direction: column;
@@ -172,7 +168,6 @@ h2 {
 
 .featured-speakers-title {
   color: #272a31;
-  font-size: 1.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,7 +181,7 @@ h2 {
 .speaker-card {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
