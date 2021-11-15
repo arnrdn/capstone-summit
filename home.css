@@ -162,37 +162,37 @@ h2 {
 }
 
 .speakers-container {
+  font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 1.3rem;
+  padding: 3rem 1rem;
 }
 
 .featured-speakers-title {
   color: #272a31;
-  font-family: 'Lato', sans-serif;
   font-size: 1.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.speaker-cards {
+  list-style: none;
+  padding: 2rem 0;
+}
+
 .speaker-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.speaker-img {
-  position: relative;
+  align-items: center;
 }
 
 .cb-dark {
-  width: 70px;
-  height: 70px;
-  top: 0;
-  left: 0;
+  width: 45px;
+  height: 45px;
 }
 
 .cb-light {
@@ -200,10 +200,60 @@ h2 {
 }
 
 .speaker-img {
-  position: absolute;
-  width: 140px;
-  height: 140px;
+  background: url("./images/chessboard-dark.png") top left no-repeat;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
+  padding-top: 15px;
+  padding-left: 17px;
+  background-size: 50%;
+}
+
+.speaker-info {
+  margin-left: 0.9rem;
+}
+
+.speaker-name {
+  color: #282828;
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+
+.speaker-position {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #F9503A;
+  font-style: italic;
+}
+
+.speaker-info-line {
+  margin: 0.7rem 0;
+  width: 20px;
+  height: 1px;
+  background-color: #dfdfdf;
+}
+
+.speaker-about {
+  font-size: 0.7rem;
+  line-height: 1.1rem;
+}
+
+.more-btn {
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  background-color: #fff;
+  width: 100%;
+  padding: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-btn img {
+  margin-left: 0.4rem;
 }
 
 /* @media screen  (min-width: 768px) {
