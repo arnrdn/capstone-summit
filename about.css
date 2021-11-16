@@ -318,6 +318,14 @@ h2 {
     justify-content: space-between;
   }
 
+  .top-nav-socials img {
+    margin-left: 1rem;
+  }
+
+  .top-nav-menu {
+    margin-left: 1rem;
+  }
+
   .top-nav-menu li a {
     font-size: 0.8rem;
     margin-left: 1rem;
