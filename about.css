@@ -78,7 +78,7 @@ h1 {
   margin: 1.8rem 0;
 }
 
-a {
+.summit-email a {
   font-size: 0.8rem;
   color: #232323;
   font-weight: 700;
@@ -113,7 +113,8 @@ h2 {
   font-weight: 700;
 }
 
-.logo-container p,
+.logo-container .mobile,
+.logo-container .desktop,
 .past-summit-container p {
   width: 80%;
   margin: 1rem 0;
@@ -231,11 +232,214 @@ h2 {
 }
 
 .org-info {
+  width: 30%;
   margin-left: 8%;
   font-size: 0.7rem;
   line-height: 1.2rem;
 }
 
+.desktop-header-wrapper,
+.intro .line,
+.about-summit-desktop,
+.logo-container .desktop,
+.org-info div {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
+  a {
+    text-decoration: none;
+  }
+
+  .summit-email a {
+    text-decoration: underline;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .desktop-header-wrapper,
+  .intro .line,
+  .about-summit-desktop,
+  .logo-container .desktop,
+  .org-info div {
+    display: block;
+  }
+
+  .header-wrapper,
+  .slogan,
+  .partners,
+  .about-summit,
+  .logo-container .mobile {
+    display: none;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .header-hero-container {
+    background: linear-gradient(rgba(245, 245, 245, 0.9), 80%, rgb(245, 245, 245) ),
+    url("./images/background-desktop.jpg") top 60% left no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .top-nav {
+    background-color: #3E3E3E;
+  }
+
+  .top-nav,
+  .bottom-nav-menu,
+  main,
+  footer {
+    padding: 0.3rem 15%;
+  }
+
+  .bottom-nav-menu {
+    background-color: #fff;
+  }
+
+  .top-nav-container,
+  .bottom-nav-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .top-nav-container {
+    justify-content: flex-end;
+    align-items: center;
+    width: -50%;
+  }
+
+  .bottom-nav-container {
+    justify-content: space-between;
+  }
+
+  .top-nav-menu li a {
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    color: #fff;
+  }
+
+  .logo-img-nav {
+    width: 60px;
+  }
+
+  .bottom-menu .item {
+    margin-left: 3rem;
+    color: #505050;
+    font-size: 0.9rem;
+  }
+
+  .bottom-menu .item:hover,
+  .bottom-menu .about {
+    color: #f9503a;
+  }
+
+  .sa-campaign {
+    color: #f9503a;
+    font-size: 0.9rem;
+    border: 3px solid #f9503a;
+    padding: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .hero {
+    margin: 3.5rem 0;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .about-summit-desktop {
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: #505050;
+    background-color: #fff;
+    border: 2px solid #E9E9E9;
+    padding: 1rem 3rem;
+    width: 65%;
+  }
+
+  .summit-email {
+    margin: 2.5rem 0;
+  }
+
+  .logo-container,
+  .past-summit-container {
+    padding: 4.5rem 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  .logo-img {
+    padding: 2rem 10%;
+    margin: 2rem 0;
+  }
+
+  .past-sa-gs-img {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 3rem 0;
+  }
+
+  .past-t {
+    padding: 3rem 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .past-t:nth-of-type(2) {
+    margin-left: 1.5rem;
+  }
+  
+  .past-text-2017 {
+    background: linear-gradient(rgba(189, 59, 45, 0.7), 100%, rgba(236, 82, 66, 0.7)),
+    url("./images/2017.jpg") top left no-repeat;
+    background-size: cover;
+  }
+  
+  .past-text-2015 {
+    background: linear-gradient(rgba(189, 59, 45, 0.7), 100%, rgba(236, 82, 66, 0.7)),
+    url("./images/2015.jpg") top left no-repeat;
+    background-size: cover;
+  }
+
+  footer {
+    background-color: #3E3E3E;
+    color: #d7d7d7;
+  }
+
+  .footer-container {
+    margin: 4rem auto;
+    width: 100%;
+  }
+
+  .org-info {
+    width: 70%;
+  }
+
+  .org-info div {
+    margin-top: 0.9rem;
+    line-height: 0.9rem;
+  }
   
 }

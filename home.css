@@ -278,7 +278,9 @@ footer {
   }
 
   .header-wrapper,
-  .join-btn {
+  .join-btn,
+  .more-btn,
+  .title br {
     display: none;
   }
 
@@ -330,7 +332,7 @@ footer {
     color: #fff;
   }
 
-  .bottom-nav-container img {
+  .logo-img-nav {
     width: 60px;
   }
 
@@ -418,10 +420,6 @@ footer {
     width: 40px;
   }
 
-  .title br {
-    display: none;
-  }
-
   .see-program {
     text-transform: uppercase;
     color: #fff;
@@ -457,10 +455,6 @@ footer {
     padding-top: 15px;
     padding-left: 17px;
     background-size: 50%;
-  }
-
-  .more-btn {
-    display: none;
   }
 
   .partners {
@@ -501,7 +495,7 @@ footer {
   .footer-container {
     margin: 4rem auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
   }
@@ -509,6 +503,7 @@ footer {
   .org-info {
     margin-left: 8%;
     font-size: 0.7rem;
+    width: 70%;
   }
 
   .org-info div {
