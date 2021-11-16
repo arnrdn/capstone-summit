@@ -235,3 +235,7 @@ h2 {
   font-size: 0.7rem;
   line-height: 1.2rem;
 }
+
+@media screen (min-width: 768px) {
+  
+}

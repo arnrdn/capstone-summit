@@ -190,10 +190,6 @@ h2 {
   height: 45px;
 }
 
-.cb-light {
-  display: none;
-}
-
 .speaker-img {
   background: url("./images/chessboard-dark.png") top left no-repeat;
   width: 100px;
@@ -251,6 +247,26 @@ h2 {
   margin-left: 0.4rem;
 }
 
-/* @media screen  (min-width: 768px) {
-  
-} */
+.cb-light,
+.desktop-header-wrapper,
+.see-program-container,
+.partners,
+footer {
+  display: none;
+}
+
+@media screen (min-width: 768px) {
+
+  .cb-light,
+  .desktop-header-wrapper,
+  .see-program-container,
+  .partners,
+  footer {
+    display: block;
+  }
+
+  .header-wrapper {
+    display: none;
+  }
+
+}
