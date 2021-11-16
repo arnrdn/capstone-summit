@@ -12,6 +12,18 @@ main,
   padding: 0 1.3rem;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .header-hero-container {
   background: linear-gradient(rgba(245, 245, 245, 0.9), 80%, rgb(245, 245, 245) ),
   url("./images/background-mobile.jpg") top 60% left no-repeat;
@@ -35,7 +47,6 @@ main,
 }
 
 .slogan {
-  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   color: #F53510; 
@@ -43,7 +54,6 @@ main,
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
   font-weight: 900;
   font-size: 2rem;
   text-transform: uppercase;
@@ -51,7 +61,6 @@ h1 {
 }
 
 .about-summit {
-  font-family: 'Lato', sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 1.4rem;
@@ -73,7 +82,6 @@ h1 {
 }
 
 .place {
-  font-family: 'Lato', sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   color: #505050;
@@ -92,7 +100,6 @@ h1 {
 }
 
 h2 {
-  font-family: 'Lato', sans-serif;
   font-size: 1.4rem;
 }
 
@@ -111,13 +118,17 @@ h2 {
 }
 
 .main-program-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
   list-style: none;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .main-program-list .item {
   background-color: rgba(255, 255, 255, 0.1);
   color: #FEFFFD;
+  margin-bottom: 1em;
 }
 
 .main-program-list .item .item-content {
@@ -132,8 +143,11 @@ h2 {
   flex-basis: 10%;
 }
 
+.icon-container .icon {
+  width: 30px;
+}
+
 .item-content .title {
-  font-family: 'Lato', sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   color: #F9503A;
@@ -142,14 +156,13 @@ h2 {
 }
 
 .item-content .description {
-  font-family: 'Lato', sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   flex-basis: 60%;
+  flex-shrink: 1;
 }
 
 .join-btn {
-  font-family: 'Lato', sans-serif;
   font-size: 1.2rem;
   border: none;
   color: #FEFFFD;
@@ -158,7 +171,6 @@ h2 {
 }
 
 .speakers-container {
-  font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,6 +186,8 @@ h2 {
 }
 
 .speaker-cards {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   padding: 2rem 0;
 }
@@ -183,11 +197,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.cb-dark {
-  width: 45px;
-  height: 45px;
+  margin: 1rem;
 }
 
 .speaker-img {
@@ -247,17 +257,19 @@ h2 {
   margin-left: 0.4rem;
 }
 
-.cb-light,
 .desktop-header-wrapper,
+.see-program-container,
 .see-program-container,
 .partners,
 footer {
   display: none;
 }
 
-@media screen (min-width: 768px) {
+@media (min-width: 768px) {
+  ul {
+    display: flex;
+  }
 
-  .cb-light,
   .desktop-header-wrapper,
   .see-program-container,
   .partners,
@@ -265,8 +277,243 @@ footer {
     display: block;
   }
 
-  .header-wrapper {
+  .header-wrapper,
+  .join-btn {
     display: none;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .header-hero-container {
+    background: linear-gradient(rgba(245, 245, 245, 0.9), 80%, rgb(245, 245, 245) ),
+    url("./images/background-desktop.jpg") top 60% left no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .top-nav {
+    background-color: #3E3E3E;
+  }
+
+  .top-nav,
+  .bottom-nav-menu,
+  main,
+  footer {
+    padding: 0.3rem 15%;
+  }
+
+  .bottom-nav-menu {
+    background-color: #fff;
+  }
+
+  .top-nav-container,
+  .bottom-nav-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .top-nav-container {
+    justify-content: flex-end;
+    align-items: center;
+    width: -50%;
+  }
+
+  .bottom-nav-container {
+    justify-content: space-between;
+  }
+
+  .top-nav-menu li a {
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    color: #fff;
+  }
+
+  .bottom-nav-container img {
+    width: 60px;
+  }
+
+  .bottom-menu .item {
+    margin-left: 3rem;
+    color: #505050;
+    font-size: 0.9rem;
+  }
+
+  .bottom-menu .item:hover {
+    color: #f9503a;
+  }
+
+  .sa-campaign {
+    color: #f9503a;
+    font-size: 0.9rem;
+    border: 3px solid #f9503a;
+    padding: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .wrapper {
+    padding: 4rem 0;
+  }
+
+  .hero {
+    width: 80%;
+  }
+
+  .slogan {
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin-top: 0.8rem;
+  }
+
+  .about-summit {
+    margin: 0 0 1rem 0;
+    width: 65%;
+  }
+
+  .summit-address span {
+    font-size: 2rem;
+  }
+
+  .summit-address .place {
+    font-size: 1.2rem;
+  }
+
+  .main-program-container {
+    padding: 7rem 13%;
+  }
+
+  .main-program-list {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin: 4rem 0.5rem;
+  }
+
+  .main-program-list .item {
+    margin: 0 0.2rem;
+  }
+
+  .main-program-list .item:hover {
+    box-shadow: 0 0 0 2px #fff inset;
+  }
+  
+  .main-program-list .item .item-content {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .item-content .title {
+    font-size: 1.5rem;
+  }
+
+  .icon-container .icon {
+    width: 40px;
+  }
+
+  .title br {
+    display: none;
+  }
+
+  .see-program {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    border-bottom: 1px solid #fff;
+  }
+
+  .item-content .title {
+    margin: 1rem 0;
+  }
+
+  .see-program-container {
+    display: block;
+  }
+
+  .speakers-container {
+    padding: 5rem 13%;
+  }
+
+  .speaker-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 2rem 0;
+  }
+  
+  .speaker-img {
+    background: url("./images/chessboard-ligt.png") top left no-repeat;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding-top: 15px;
+    padding-left: 17px;
+    background-size: 50%;
+  }
+
+  .more-btn {
+    display: none;
+  }
+
+  .partners {
+    background-color: #414246;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners-container {
+    margin: 4rem 1rem;
+  }
+
+  .partners-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners-title h2 {
+    color: #f2f2f2;
+  }
+
+  .partner-logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 2rem 0;
+  }
+
+  .partner {
+    width: 130px;
+    margin: 1rem 1.8rem;
+    opacity: 0.9;
+  }
+
+  .footer-container {
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .org-info {
+    margin-left: 8%;
+    font-size: 0.7rem;
+  }
+
+  .org-info div {
+    margin-top: 0.9rem;
+    line-height: 0.9rem;
   }
 
 }
