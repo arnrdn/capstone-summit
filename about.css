@@ -92,6 +92,10 @@ main,
   color: #ec5242;
 }
 
+.change .top-nav-mobile .about {
+  color: #ec5242;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -434,8 +438,8 @@ h2 {
     color: #505050;
     background-color: #fff;
     border: 2px solid #E9E9E9;
-    padding: 1rem 3rem;
-    width: 65%;
+    padding: 2rem 3rem;
+    width: 60%;
   }
 
   .summit-email {
@@ -445,6 +449,10 @@ h2 {
   .logo-container,
   .past-summit-container {
     padding: 4.5rem 1.3rem;
+  }
+
+  .logo-container .desktop {
+    width: 40%;
   }
 
   h2 {

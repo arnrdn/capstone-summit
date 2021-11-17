@@ -250,9 +250,9 @@ h2 {
 .speaker-card {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin: 1rem;
+  margin: 1.2rem 1rem;
 }
 
 .speaker-img {
@@ -471,7 +471,7 @@ footer {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 1rem 0;
   }
 
@@ -499,15 +499,24 @@ footer {
   }
 
   .speakers-container {
-    padding: 5rem 13%;
+    padding: 5rem 5%;
   }
 
   .speaker-cards {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
     list-style: none;
     padding: 2rem 0;
+    margin: 1.3rem;
+    width: 100%;
+  }
+
+  .speaker-card {
+    justify-content: flex-start;
+    flex-basis: 40%;
+    flex-shrink: 1;
   }
   
   .speaker-img {
