@@ -315,6 +315,7 @@ h2 {
 .desktop-header-wrapper,
 .see-program-container,
 .see-program-container,
+.speaker-card:nth-of-type(n+3),
 .partners,
 footer {
   display: none;
@@ -518,6 +519,10 @@ footer {
     flex-basis: 40%;
     flex-shrink: 1;
   }
+
+  .speaker-card:nth-of-type(n+3) {
+    display: flex;
+  }
   
   .speaker-img {
     background: url("./images/chessboard-ligt.png") top left no-repeat;
@@ -561,7 +566,6 @@ footer {
   .partner {
     width: 130px;
     margin: 1rem 1.8rem;
-    opacity: 0.9;
   }
 
   .footer-container {
