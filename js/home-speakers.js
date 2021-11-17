@@ -28,7 +28,7 @@ const mainProgram = [
     alt: 'sa ignite',
     activity: 'SA Ignite',
     description: 'Get opportunities to network with SA affiliates around the world, also after the summit.',
-  }
+  },
 ];
 
 mainProgram.forEach((part) => {
@@ -109,5 +109,3 @@ speakersInfo.forEach((speaker) => {
 </li>`;
   document.querySelector('.speaker-cards').insertAdjacentHTML('beforeend', speakerCard);
 });
-
-
