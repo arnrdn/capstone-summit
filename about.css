@@ -8,24 +8,29 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  width: 100%;
 }
 
 ul {
   list-style: none;
 }
 
-.header-hero-container {
+header {
+  height: 0;
+}
+
+.hero {
   background:
     linear-gradient(rgba(247, 247, 247, 0.9), 30%, rgb(247, 247, 247)),
     url("./images/background-mobile.jpg") top 60% left no-repeat;
   background-size: cover;
-  width: 100%;
+  box-shadow: 0 -10px 8px 1px rgba(247, 247, 247, 1) inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4.2rem 7%;
 }
 
-header,
-.hero,
-.wrapper,
 .main-program-container {
   padding: 0 1.3rem;
 }
@@ -35,12 +40,11 @@ header,
 }
 
 .hamburger {
-  cursor: pointer;
   position: fixed;
+  left: 1.3rem;
 }
 
 .line {
-  background-color: #ff4f38;
   width: 30px;
   height: 1px;
   margin-top: 1rem;
@@ -107,13 +111,6 @@ header,
 
 .change .top-nav-mobile .about {
   color: #ec5242;
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .intro {
@@ -257,6 +254,14 @@ h2 {
   font-weight: 400;
 }
 
+.footer-container {
+  margin: 2.3rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
 .partners {
   background-color: #414246;
   display: flex;
@@ -289,14 +294,6 @@ h2 {
 .partner {
   width: 110px;
   margin: 0.7rem;
-}
-
-.footer-container {
-  margin: 2.3rem auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
 }
 
 .org-info {
@@ -344,15 +341,14 @@ h2 {
   }
 
   header {
-    padding: 0;
+    height: auto;
   }
 
-  .header-hero-container {
+  .hero {
     background:
       linear-gradient(rgba(245, 245, 245, 0.9), 80%, rgb(245, 245, 245)),
       url("./images/background-desktop.jpg") top 60% left no-repeat;
     background-size: cover;
-    width: 100%;
   }
 
   .top-nav {
@@ -361,7 +357,6 @@ h2 {
 
   .top-nav,
   .bottom-nav-menu,
-  main,
   footer {
     padding: 0.3rem 15%;
   }
@@ -423,10 +418,6 @@ h2 {
     margin-left: 1rem;
   }
 
-  .hero {
-    margin: 3.5rem 0;
-  }
-
   .intro {
     display: flex;
     flex-direction: column;
@@ -455,7 +446,7 @@ h2 {
 
   .logo-container,
   .past-summit-container {
-    padding: 4.5rem 1.3rem;
+    padding: 4.5rem 13%;
   }
 
   .logo-container .desktop {
