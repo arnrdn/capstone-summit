@@ -7,7 +7,7 @@
 }
 
 header,
-main,
+.hero,
 .main-program-container {
   padding: 0 1.3rem;
 }
@@ -25,8 +25,9 @@ body {
 }
 
 .header-hero-container {
-  background: linear-gradient(rgba(245, 245, 245, 0.9), 80%, rgb(245, 245, 245) ),
-  url("./images/background-mobile.jpg") top 60% left no-repeat;
+  background:
+    linear-gradient(rgba(245, 245, 245, 0.9), 80%, rgb(245, 245, 245)),
+    url("./images/background-mobile.jpg") top 60% left no-repeat;
   background-size: cover;
   width: 100%;
 }
@@ -42,10 +43,17 @@ body {
   position: fixed;
 }
 
+.line {
+  background-color: #ff4f38;
+  width: 50px;
+  height: 1px;
+  margin-top: 1rem;
+}
+
 .hamburger .line {
   width: 30px;
   height: 5px;
-  background-color: #555555;
+  background-color: #555;
   margin: 4px 0;
   border-radius: 10px;
   transition: all 0.6s;
@@ -62,7 +70,7 @@ body {
 
 .change .line:nth-of-type(3) {
   transform: rotate(405deg) translate(-7px, -3px);
-  background-color :#f7f7f7;
+  background-color: #f7f7f7;
 }
 
 .top-nav-mobile {
@@ -86,8 +94,14 @@ body {
   transform: translateX(0);
 }
 
+.main-program-list .item {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fefffd;
+  margin-bottom: 1em;
+}
+
 .change .top-nav-mobile .item {
-  color:#f2f2f2;
+  color: #f2f2f2;
   font-weight: 600;
   font-size: 2rem;
 }
@@ -103,7 +117,7 @@ body {
 .slogan {
   font-weight: 400;
   font-size: 1.2rem;
-  color: #F53510; 
+  color: #f53510;
   padding: 0.5rem 0;
   margin-top: 2.8rem;
 }
@@ -112,7 +126,7 @@ h1 {
   font-weight: 900;
   font-size: 2rem;
   text-transform: uppercase;
-  color: #FF422C;
+  color: #ff422c;
 }
 
 .about-summit {
@@ -120,7 +134,7 @@ h1 {
   font-size: 0.9rem;
   line-height: 1.4rem;
   color: #505050;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   border: 2px solid #fff;
   padding: 1rem;
 }
@@ -133,7 +147,7 @@ h1 {
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 1.5rem;
   font-weight: 200;
-  color: #555555;
+  color: #555;
 }
 
 .place {
@@ -159,17 +173,10 @@ h2 {
 }
 
 .main-program-title {
-  color: #FEFFFD;
+  color: #fefffd;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.line {
-  background-color: #FF4F38;
-  width: 50px;
-  height: 1px;
-  margin-top: 1rem;
 }
 
 .main-program-list {
@@ -177,13 +184,7 @@ h2 {
   flex-direction: column;
   justify-content: stretch;
   list-style: none;
-  margin: 1.5rem 0;
-}
-
-.main-program-list .item {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #FEFFFD;
-  margin-bottom: 1em;
+  padding: 1.5rem 0;
 }
 
 .main-program-list .item .item-content {
@@ -205,7 +206,7 @@ h2 {
 .item-content .title {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #F9503A;
+  color: #f9503a;
   flex-basis: 23%;
   margin: 0 0.1rem;
 }
@@ -220,8 +221,8 @@ h2 {
 .join-btn {
   font-size: 1.2rem;
   border: none;
-  color: #FEFFFD;
-  background-color: #F9503A;
+  color: #fefffd;
+  background-color: #f9503a;
   padding: 2rem;
 }
 
@@ -279,7 +280,7 @@ h2 {
 .speaker-position {
   font-size: 0.8rem;
   font-weight: 500;
-  color: #F9503A;
+  color: #f9503a;
   font-style: italic;
 }
 
@@ -314,7 +315,6 @@ h2 {
 
 .desktop-header-wrapper,
 .see-program-container,
-.see-program-container,
 .speaker-card:nth-of-type(n+3),
 .partners,
 footer {
@@ -345,19 +345,20 @@ footer {
   }
 
   .header-hero-container {
-    background: linear-gradient(rgba(245, 245, 245, 0.9), 80%, rgb(245, 245, 245) ),
-    url("./images/background-desktop.jpg") top 60% left no-repeat;
+    background:
+      linear-gradient(rgba(245, 245, 245, 0.9), 80%, rgb(245, 245, 245)),
+      url("./images/background-desktop.jpg") top 60% left no-repeat;
     background-size: cover;
     width: 100%;
   }
 
   .top-nav {
-    background-color: #3E3E3E;
+    background-color: #3e3e3e;
   }
 
   .top-nav,
   .bottom-nav-menu,
-  main,
+  .hero,
   footer {
     padding: 0.3rem 15%;
   }
@@ -406,6 +407,10 @@ footer {
     font-size: 0.9rem;
   }
 
+  .main-program-list .item {
+    margin: 0 0.2rem;
+  }
+
   .bottom-menu .item:hover {
     color: #f9503a;
   }
@@ -416,10 +421,6 @@ footer {
     border: 3px solid #f9503a;
     padding: 0.5rem;
     margin-left: 1rem;
-  }
-
-  .wrapper {
-    padding: 4rem 0;
   }
 
   .hero {
@@ -459,14 +460,10 @@ footer {
     margin: 4rem 0.5rem;
   }
 
-  .main-program-list .item {
-    margin: 0 0.2rem;
-  }
-
   .main-program-list .item:hover {
     box-shadow: 0 0 0 2px #fff inset;
   }
-  
+
   .main-program-list .item .item-content {
     justify-content: space-between;
     align-items: center;
@@ -478,6 +475,7 @@ footer {
 
   .item-content .title {
     font-size: 1.5rem;
+    margin: 1rem 0;
   }
 
   .icon-container .icon {
@@ -489,10 +487,6 @@ footer {
     color: #fff;
     font-weight: 300;
     border-bottom: 1px solid #fff;
-  }
-
-  .item-content .title {
-    margin: 1rem 0;
   }
 
   .see-program-container {
@@ -523,7 +517,7 @@ footer {
   .speaker-card:nth-of-type(n+3) {
     display: flex;
   }
-  
+
   .speaker-img {
     background: url("./images/chessboard-ligt.png") top left no-repeat;
     width: 100px;
@@ -586,5 +580,4 @@ footer {
     margin-top: 0.9rem;
     line-height: 0.9rem;
   }
-
 }
