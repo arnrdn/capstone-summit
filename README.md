@@ -21,7 +21,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/rdnrn/capstone-summit/capstone-project/home.html)
+[Live Demo Link](https://raw.githack.com/rdnrn/capstone-summit/main/home.html)
 
 
 ## Getting Started
