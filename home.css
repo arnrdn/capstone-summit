@@ -1,0 +1,592 @@
+@font-face {
+  font-family: 'COCOGOOSE';
+  font-style: normal;
+  font-weight: 400;
+  src: local('COCOGOOSE'), url('https://fonts.cdnfonts.com/s/26936/cocogoose_trial.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  height: 0;
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(245, 245, 245, 0.9), 80%, rgb(245, 245, 245)),
+    url("./images/background-mobile.jpg") top 60% left no-repeat;
+  background-size: cover;
+  box-shadow: 0 -10px 8px 1px rgba(247, 247, 247, 1) inset;
+  display: flex;
+  flex-direction: column;
+  padding: 4.2rem 9%;
+}
+
+.header-wrapper {
+  padding: 1rem 0;
+}
+
+.hamburger {
+  position: fixed;
+  left: 1.3rem;
+}
+
+.line {
+  background-color: #ff4f38;
+  width: 50px;
+  height: 1px;
+  margin-top: 1rem;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #555;
+  margin: 4px 0;
+  border-radius: 10px;
+  transition: all 0.6s;
+}
+
+.change .line {
+  transform: rotate(-405deg) translate(-10px, 6px);
+  background-color: #f7f7f7;
+}
+
+.change .line:nth-of-type(2) {
+  opacity: 0;
+}
+
+.change .line:nth-of-type(3) {
+  transform: rotate(405deg) translate(-7px, -3px);
+  background-color: #f7f7f7;
+}
+
+.top-nav-mobile {
+  position: fixed;
+  transform: translateX(-200%);
+  transition: all 0.6s;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.main-program-list .item {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fefffd;
+}
+
+.change .top-nav-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: rgba(39, 42, 50, 0.9);
+  backdrop-filter: blur(5px);
+  padding-left: 3rem;
+  transform: translateX(0);
+}
+
+.change .top-nav-mobile .item {
+  color: #f2f2f2;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.change .top-nav-mobile .item:hover {
+  color: #ec5242;
+}
+
+.change .top-nav-mobile .home {
+  color: #ec5242;
+}
+
+.intro {
+  margin: 2rem 0.4rem;
+}
+
+.slogan {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #f53510;
+  padding: 0.5rem 0;
+  margin-top: 2.8rem;
+}
+
+h1 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #ff422c;
+}
+
+.about-summit {
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  color: #505050;
+  background-color: #f7f7f7;
+  border: 2px solid #fff;
+  padding: 1rem;
+}
+
+.summit-address {
+  padding: 1.5rem 0 6rem 0;
+}
+
+.summit-address span {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #555;
+}
+
+.place {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #505050;
+}
+
+.main-program {
+  background: #272a31 url("./images/program-bg.png") top left repeat;
+}
+
+.main-program-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 3%;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+.main-program-title {
+  color: #fefffd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-program-list {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+  list-style: none;
+  margin: 3rem 0;
+}
+
+.main-program-list .item .item-content {
+  display: grid;
+  grid-template-columns: 10% 30% 55%;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.icon-container .icon {
+  width: 30px;
+}
+
+.item-content .title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f9503a;
+  margin: 0 0.1rem;
+}
+
+.item-content .description {
+  font-size: 0.9rem;
+  font-weight: 400;
+  flex-shrink: 1;
+}
+
+.join-btn {
+  font-size: 1.2rem;
+  border: none;
+  color: #fefffd;
+  background-color: #f9503a;
+  padding: 2rem;
+}
+
+.speakers-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.featured-speakers-title {
+  color: #272a31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speaker-cards {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 2rem 0;
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.2rem 1rem;
+}
+
+.speaker-img {
+  background: url("./images/chessboard-dark.png") top left no-repeat;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  padding-top: 15px;
+  padding-left: 17px;
+  background-size: 50%;
+}
+
+.speaker-info {
+  margin-left: 0.9rem;
+}
+
+.speaker-name {
+  color: #282828;
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+
+.speaker-position {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #f9503a;
+  font-style: italic;
+}
+
+.speaker-info-line {
+  margin: 0.7rem 0;
+  width: 20px;
+  height: 1px;
+  background-color: #dfdfdf;
+}
+
+.speaker-about {
+  font-size: 0.7rem;
+  line-height: 1.1rem;
+}
+
+.more-btn {
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  background-color: #fff;
+  width: 100%;
+  padding: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-btn img {
+  margin-left: 0.4rem;
+}
+
+.desktop-header-wrapper,
+.see-program-container,
+.speaker-card:nth-of-type(n+3),
+.partners,
+footer {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  ul {
+    display: flex;
+  }
+
+  .desktop-header-wrapper,
+  .see-program-container,
+  .partners,
+  footer {
+    display: block;
+  }
+
+  .header-wrapper,
+  .join-btn,
+  .more-btn,
+  .title br {
+    display: none;
+  }
+
+  header {
+    height: auto;
+    padding: 0;
+  }
+
+  .hero {
+    background:
+      linear-gradient(rgba(245, 245, 245, 0.9), 80%, rgb(245, 245, 245)),
+      url("./images/background-desktop.jpg") top 60% left no-repeat;
+    background-size: cover;
+    padding: 4rem 15%;
+  }
+
+  .top-nav {
+    background-color: #3e3e3e;
+  }
+
+  .top-nav,
+  .bottom-nav-menu,
+  .footer-container {
+    padding: 0.3rem 15%;
+  }
+
+  .bottom-nav-menu {
+    background-color: #fff;
+  }
+
+  .top-nav-container,
+  .bottom-nav-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .top-nav-container {
+    justify-content: flex-end;
+    align-items: center;
+    width: -50%;
+  }
+
+  .bottom-nav-container {
+    justify-content: space-between;
+  }
+
+  .top-nav-socials img {
+    margin-left: 1rem;
+  }
+
+  .top-nav-menu {
+    margin-left: 1rem;
+  }
+
+  .top-nav-menu li a {
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    color: #fff;
+  }
+
+  .logo-img-nav {
+    width: 60px;
+  }
+
+  .bottom-menu {
+    margin-left: 20%;
+  }
+
+  .bottom-menu .item {
+    margin-left: 3rem;
+    color: #505050;
+    font-size: 0.9rem;
+  }
+
+  .main-program-list .item {
+    margin: 0 0.2rem;
+  }
+
+  .bottom-menu .item:hover {
+    color: #f9503a;
+  }
+
+  .sa-campaign {
+    color: #f9503a;
+    font-size: 0.9rem;
+    border: 3px solid #f9503a;
+    padding: 0.5rem;
+  }
+
+  .intro {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .slogan {
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin-top: 0.8rem;
+  }
+
+  .about-summit {
+    margin: 0 0 1rem 0;
+    width: 50%;
+  }
+
+  .summit-address span {
+    font-size: 2rem;
+  }
+
+  .summit-address .place {
+    font-size: 1.2rem;
+  }
+
+  .main-program-container {
+    padding: 7rem 13%;
+  }
+
+  .main-program-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+    margin: 3rem 0;
+    gap: 0;
+  }
+
+  .main-program-list .item .item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .main-program-list .item:hover {
+    box-shadow: 0 0 0 2px #fff inset;
+  }
+
+  .item-content .title {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .icon-container .icon {
+    width: 40px;
+  }
+
+  .see-program {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    border-bottom: 1px solid #fff;
+  }
+
+  .see-program-container {
+    display: block;
+  }
+
+  .speakers-container {
+    padding: 5rem 5%;
+  }
+
+  .speaker-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    list-style: none;
+    padding: 2rem 0;
+    margin: 1.3rem;
+    width: 100%;
+  }
+
+  .speaker-card {
+    justify-content: flex-start;
+    flex-basis: 40%;
+    flex-shrink: 1;
+  }
+
+  .speaker-card:nth-of-type(n+3) {
+    display: flex;
+  }
+
+  .speaker-img {
+    background: url("./images/chessboard-ligt.png") top left no-repeat;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding-top: 15px;
+    padding-left: 17px;
+    background-size: 50%;
+  }
+
+  .footer-container {
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partners {
+    background-color: #414246;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners-container {
+    margin: 4rem 1rem;
+  }
+
+  .partners-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners-title h2 {
+    color: #f2f2f2;
+  }
+
+  .partner-logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 2rem 0;
+  }
+
+  .partner {
+    width: 130px;
+    margin: 1rem 1.8rem;
+  }
+
+  .org-info {
+    margin-left: 8%;
+    font-size: 0.7rem;
+    width: 70%;
+  }
+
+  .org-info div {
+    margin-top: 0.9rem;
+    line-height: 0.9rem;
+  }
+}
