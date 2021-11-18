@@ -26,7 +26,7 @@
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps:
+To get a local copy up and running follow these steps:
 
 1. Click the green "Code" button
 2. Click the "Download ZIP" button
