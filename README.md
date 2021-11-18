@@ -15,6 +15,10 @@
 
 - HTML, CSS, JavaScript
 
+## Video about this project
+
+[Click here to watch the video (recorded using Loom)](https://www.loom.com/share/97cdad832e6c4944ba63447d2f9de467)
+
 ## Live Demo
 
 [Live Demo Link](https://raw.githack.com/rdnrn/capstone-summit/capstone-project/home.html)
