@@ -1,4 +1,10 @@
-@import url('http://fonts.cdnfonts.com/css/cocogoose?styles=44178');
+@font-face {
+  font-family: 'COCOGOOSE';
+  font-style: normal;
+  font-weight: 400;
+  src: local('COCOGOOSE'), url('https://fonts.cdnfonts.com/s/26936/cocogoose_trial.woff') format('woff');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 * {
@@ -399,6 +405,10 @@ h2 {
     width: 60px;
   }
 
+  .bottom-menu {
+    margin-left: 20%;
+  }
+
   .bottom-menu .item {
     margin-left: 3rem;
     color: #505050;
@@ -415,7 +425,6 @@ h2 {
     font-size: 0.9rem;
     border: 3px solid #f9503a;
     padding: 0.5rem;
-    margin-left: 1rem;
   }
 
   .intro {

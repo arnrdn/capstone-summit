@@ -1,4 +1,10 @@
-@import url('http://fonts.cdnfonts.com/css/cocogoose?styles=44178');
+@font-face {
+  font-family: 'COCOGOOSE';
+  font-style: normal;
+  font-weight: 400;
+  src: local('COCOGOOSE'), url('https://fonts.cdnfonts.com/s/26936/cocogoose_trial.woff') format('woff');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 * {
@@ -93,12 +99,6 @@ header {
   transform: translateX(0);
 }
 
-.main-program-list .item {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fefffd;
-  margin-bottom: 1em;
-}
-
 .change .top-nav-mobile .item {
   color: #f2f2f2;
   font-weight: 600;
@@ -178,24 +178,26 @@ h2 {
   align-items: center;
 }
 
+.main-program-list .item {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fefffd;
+}
+
 .main-program-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
   list-style: none;
-  padding: 1.5rem 0;
+  margin: 3rem 0;
 }
 
 .main-program-list .item .item-content {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 10% 30% 55%;
+  gap: 1rem;
   align-items: center;
   padding: 1.5rem;
   margin: 1rem 0;
-}
-
-.icon-container {
-  flex-basis: 10%;
 }
 
 .icon-container .icon {
@@ -206,14 +208,12 @@ h2 {
   font-size: 1.1rem;
   font-weight: 600;
   color: #f9503a;
-  flex-basis: 23%;
   margin: 0 0.1rem;
 }
 
 .item-content .description {
   font-size: 0.9rem;
   font-weight: 400;
-  flex-basis: 60%;
   flex-shrink: 1;
 }
 
@@ -400,6 +400,10 @@ footer {
     width: 60px;
   }
 
+  .bottom-menu {
+    margin-left: 20%;
+  }
+
   .bottom-menu .item {
     margin-left: 3rem;
     color: #505050;
@@ -419,7 +423,6 @@ footer {
     font-size: 0.9rem;
     border: 3px solid #f9503a;
     padding: 0.5rem;
-    margin-left: 1rem;
   }
 
   .intro {
@@ -454,20 +457,27 @@ footer {
   }
 
   .main-program-list {
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
-    margin: 4rem 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+    margin: 3rem 0;
+    gap: 0;
   }
-
+  
+  .main-program-list .item .item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+  
   .main-program-list .item:hover {
     box-shadow: 0 0 0 2px #fff inset;
   }
 
   .main-program-list .item .item-content {
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
     text-align: center;
     padding: 1rem;
     margin: 1rem 0;
