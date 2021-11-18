@@ -51,6 +51,7 @@ header {
 }
 
 .line {
+  background-color: #ff4f38;
   width: 30px;
   height: 1px;
   margin-top: 1rem;
@@ -131,7 +132,8 @@ header {
 }
 
 h1 {
-  font-weight: 900;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 500;
   font-size: 2rem;
   text-transform: uppercase;
   color: #ff422c;
@@ -251,8 +253,9 @@ h2 {
 }
 
 .year {
-  font-size: 1.7rem;
-  font-weight: 900;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .info {

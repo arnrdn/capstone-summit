@@ -122,7 +122,8 @@ header {
 }
 
 h1 {
-  font-weight: 900;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 500;
   font-size: 2rem;
   text-transform: uppercase;
   color: #ff422c;
