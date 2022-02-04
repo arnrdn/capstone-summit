@@ -538,6 +538,19 @@ footer {
     background-size: 50%;
   }
 
+  .speaker-name {
+    font-size: 1.1rem;
+  }
+  
+  .speaker-position {
+    font-size: 1rem;
+  }
+  
+  
+  .speaker-about {
+    font-size: 0.9rem;
+  }
+
   .footer-container {
     margin: 4rem auto;
     display: flex;
